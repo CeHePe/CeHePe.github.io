@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <ul id="nav-menu" class="nav-menu">
+            <li><a href="/">首页 home</a></li>
+            <li><a href="/projects">作品 projects</a></li>
+            <li><a href="/research">研究 research</a></li>
+            <li><a href="/about">关于 about</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h1>title</h1>
+            <p>date</p>
+        </div>
+        <div class="content-section">
+            <p>text1</p>
+            <img src="图片1.png" alt="Image1">
+        </div>
+        <div class="content-section">
+            <p>text2</p>
+            <img src="图片2.png" alt="2view">
+        </div>
+        <div class="content-section">
+            <p>text3</p>
+            <img src="图片3.png" alt="3view">
+        </div>
+    </div>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>   
+
+</body>
+</html>
