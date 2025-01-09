@@ -22,6 +22,11 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- 大图展示 -->
+        <div class="hero-image">
+            <img id="dynamic-image" src="home/image_1.png" alt="Hero Image" width="100%" height="auto">
+        </div>
+        <!-- 标题 -->
         <h1>李欣元 | Nick (Xinyuan) Li</h1>
         <div class="social-links">
             <a href="https://linkedin.com/in/nickxl" target="_blank">
@@ -37,6 +42,60 @@
     </section>
     
     <script>
+        // 定义图片数组
+        const images = [
+            "home/image_1.png",
+            "home/image_2.png",
+            "home/image_3.png",
+            "home/image_4.png",
+            "home/image_5.png",
+            "home/image_6.png",
+            "home/image_7.png",
+            "home/image_8.png",
+            "home/image_9.png",
+            "home/image_10.png",
+            "home/image_11.png",
+            "home/image_12.png",
+            "home/image_13.png",
+            "home/image_14.png",
+            "home/image_15.png",
+            "home/image_16.png",
+            "home/image_17.png",
+            "home/image_18.png",
+            "home/image_19.png",
+            "home/image_20.png",
+            "home/image_21.png",
+            "home/image_22.png",
+            "home/image_23.png",
+            "home/image_24.png",
+            "home/image_25.png",
+            "home/image_26.png",
+            "home/image_27.png",
+            "home/image_28.png",
+            "home/image_29.png",
+            "home/image_30.png",
+            "home/image_31.png",
+            "home/image_32.png",
+            "home/image_33.png",
+            "home/image_34.png",
+            "home/image_35.png",
+            "home/image_36.png",
+            "home/image_37.png",
+            "home/image_38.png"
+        ];
+
+        // 获取图片元素
+        const heroImage = document.getElementById("dynamic-image");
+
+        // 定义函数以随机更换图片
+        function changeImage() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            heroImage.src = images[randomIndex];
+        }
+
+        // 每 4 秒调用一次 changeImage 函数
+        setInterval(changeImage, 4000);
+
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.getElementById('nav-menu');
     
