@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>美国大城市的工人阶级 | The Working Classes of Great American Cities</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,81 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
             <h1>美国大城市的工人阶级</h1>
-            <h2>The Working Classes of Great American Cities</h2>
-            <h3>🛠️: ArcGIS, R</h3>
-        </div>
-        <div class="content-section">
-            <p>本项目重点关注城市居民的阶层身份。相关研究起源于 20 世纪初的芝加哥大学，学者们最初试图回答：工业革命期间城市化的发展如何加剧当代社会问题？当时的芝加哥和许多现代城市一样，商业区占据了市中心的主导地位，周围是贫民窟和破败的街区，而这些街区又被工人住宅和早期形式的现代郊区所包围。城市理论家们认为，这些在空间上截然不同的区域有助于巩固和隔离现代城市中的阶级关系，使中产阶级远离城市核心，进入远郊的私有化环境（Sassen，2000）。在此期间，许多大都市区开展了人口普查，使芝加哥大学等参与机构能够存储并轻松获取信息（Park，1984）。</p>
-            <p>This project focuses on the class identities of urban dwellers. Relevant research originated at the University of Chicago in the early 20th century, where scholars initially sought to answer the question: How did the growth of urbanization during the Industrial Revolution lead to the exacerbation of contemporary social problems? Chicago at the time, like many modern cities, had a commercial district that dominated the downtown, surrounded by slums and blighted neighborhoods that were in turn surrounded by worker housing and early forms of modern suburbia. Urban theorists argued that these spatially distinct areas helped to consolidate and segregate class relations within the modern city, moving the middle class away from the urban core and into the privatized environments of the distant suburbs (Sassen, 2000). Many metropolitan areas during this period adopted census technology, allowing participating institutions such as the University of Chicago to store and easily access information (Park, 1984). </p>
-            <p>本项目通过绘制美国各地大都市居住阶层的地图，从而探索当前现状与理论之间的矛盾。地图是表达下述思想的最合适方式，因为不仅同心圆模型（1925 年），还有后来的霍默-霍伊特的扇形模型（1939 年）以及哈里斯和乌尔曼的多核模型（1945 年），都是致力于解释城市社会结构的理论模型，正如其名称所示，它们关注的是社会结构在城市中的空间分布。</p>
-            <p>This project explores the tension between the current status quo and theory by mapping the residential class in metropolitan areas across the US. Maps are the most appropriate way to express these ideas, since not only the concentric zone model (1925), but also the later Homer Hoyt's sector model (1939) and Harris and Ullman's multiple nuclei model (1945) are theoretical models devoted to explaining the social structure of the city and, as their names suggest, are concerned with the spatial distribution of the social structure in the city.</p>
-            <p>本项目的数据来自 2022 年美国社区调查 (ACS)。本项目选择的数据层包括但不限于：月总房租、月公寓费、家庭总收入、房屋价值、就业状况、劳动力状况、工人类别、职业、行业、贫困状况等。数据层的选择受到了德国社会学家马克斯·韦伯提出的社会分层三要素理论的启发，这种多维的社会分层方法反映了财富、声望和权力之间的相互作用。</p>
-            <p>Data for this project were obtained from the American Community Survey (ACS) 2022. The data layers selected for this project include and are not limited to: Monthly gross rent, Monthly condominium fee, Total household income, House value, Employment status, Labor force status, Class of worker, Occupation, Industry, Poverty status, etc. The choice of data layers was inspired by the three-component theory of stratification, more widely known as Weberian stratification or the three-class system, was developed by German sociologist Max Weber. Weber developed a multidimensional approach to social stratification that reflects the interplay among wealth, prestige and power.</p>
-            <a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank">
-                <img src="0.jpg" alt="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19">
-            </a>            
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+            <h2 class="page-subtitle">The Working Classes of Great American Cities</h2>
+            <p class="project-meta">🛠️ ArcGIS / R / StoryMaps / Urban Sociology</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个通过地图重新检视美国大都市阶层结构的可视化项目，重点关注城市空间分布与社会分层理论之间的张力。</p>
+                <p>A mapping project that revisits class structure in major American cities, focusing on the tension between urban spatial distribution and theories of social stratification.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>本项目重点关注城市居民的阶层身份。相关研究起源于 20 世纪初的芝加哥大学，学者们最初试图回答：工业革命期间城市化的发展如何加剧当代社会问题？当时的芝加哥和许多现代城市一样，商业区占据了市中心的主导地位，周围是贫民窟和破败的街区，而这些街区又被工人住宅和早期形式的现代郊区所包围。城市理论家们认为，这些在空间上截然不同的区域有助于巩固和隔离现代城市中的阶级关系，使中产阶级远离城市核心，进入远郊的私有化环境（Sassen，2000）。在此期间，许多大都市区开展了人口普查，使芝加哥大学等参与机构能够存储并轻松获取信息（Park，1984）。</p>
+                <p>This project focuses on the class identities of urban dwellers. Relevant research originated at the University of Chicago in the early 20th century, where scholars initially sought to answer the question: How did the growth of urbanization during the Industrial Revolution lead to the exacerbation of contemporary social problems? Chicago at the time, like many modern cities, had a commercial district that dominated the downtown, surrounded by slums and blighted neighborhoods that were in turn surrounded by worker housing and early forms of modern suburbia. Urban theorists argued that these spatially distinct areas helped to consolidate and segregate class relations within the modern city, moving the middle class away from the urban core and into the privatized environments of the distant suburbs (Sassen, 2000). Many metropolitan areas during this period adopted census technology, allowing participating institutions such as the University of Chicago to store and easily access information (Park, 1984).</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p>本项目通过绘制美国各地大都市居住阶层的地图，从而探索当前现状与理论之间的矛盾。地图是表达下述思想的最合适方式，因为不仅同心圆模型（1925 年），还有后来的霍默-霍伊特的扇形模型（1939 年）以及哈里斯和乌尔曼的多核模型（1945 年），都是致力于解释城市社会结构的理论模型，正如其名称所示，它们关注的是社会结构在城市中的空间分布。</p>
+                <p>This project explores the tension between the current status quo and theory by mapping the residential class in metropolitan areas across the US. Maps are the most appropriate way to express these ideas, since not only the concentric zone model (1925), but also the later Homer Hoyt's sector model (1939) and Harris and Ullman's multiple nuclei model (1945) are theoretical models devoted to explaining the social structure of the city and, as their names suggest, are concerned with the spatial distribution of the social structure in the city.</p>
+                <p>本项目的数据来自 2022 年美国社区调查 (ACS)。本项目选择的数据层包括但不限于：月总房租、月公寓费、家庭总收入、房屋价值、就业状况、劳动力状况、工人类别、职业、行业、贫困状况等。数据层的选择受到了德国社会学家马克斯·韦伯提出的社会分层三要素理论的启发，这种多维的社会分层方法反映了财富、声望和权力之间的相互作用。</p>
+                <p>Data for this project were obtained from the American Community Survey (ACS) 2022. The data layers selected for this project include monthly gross rent, monthly condominium fee, total household income, house value, employment status, labor force status, class of worker, occupation, industry, and poverty status. The choice of layers was inspired by Weberian stratification and its multidimensional account of wealth, prestige, and power.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noreferrer">
+                        <img src="0.jpg" alt="Cities project cover image">
+                    </a>
+                    <figcaption>StoryMaps 项目封面 | StoryMaps project cover</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Research framing, data interpretation, map storytelling, bilingual writing</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>ArcGIS, R, ACS 2022 data, ArcGIS StoryMaps</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Format | 形式</h3>
+                    <p>Urban research visualization, map narrative, web presentation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noreferrer">ArcGIS StoryMaps Project</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

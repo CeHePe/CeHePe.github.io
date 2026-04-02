@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>再分配辩论 | Debating Redistribution</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,77 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Research | 2024</p>
+            <h1>再分配辩论</h1>
+            <h2 class="page-subtitle">Debating Redistribution</h2>
+            <p class="project-meta">🛠️ Research Writing / PDF Archive / Policy Debate</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个研究论文归档页，收录了围绕再分配议题展开的书面分析和展示封面。</p>
+                <p>An archive page for a research paper centered on redistribution, collecting the written analysis and its presentation cover.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>该目录包含一篇题为“Debating Redistribution”的论文 PDF 以及对应封面图。相较于项目型页面，这类研究页更强调论证结构和写作成果，因此页面重点放在论文本身的归档与访问入口，而不是复杂的视觉过程材料。</p>
+                <p>This folder contains a paper PDF titled “Debating Redistribution” along with a cover image. Compared with project pages, research pages like this place more emphasis on argumentation and writing output, so the page focuses on archiving and access rather than an elaborate visual process.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p>这类页面的作用是为研究写作提供一个稳定入口：封面图用于目录展示，正文 PDF 则保留完整内容。随着后续补充，这里还可以继续加入摘要、关键词或研究背景说明。</p>
+                <p>The function of this page is to provide a stable access point for research writing: the cover supports browsing at the index level, while the PDF preserves the full text. As the site develops further, this layout can easily absorb an abstract, keywords, or additional context.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="Debating Redistribution cover">
+                    <figcaption>论文封面图 | Paper cover image</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Research writing, argument development, paper preparation</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Format | 形式</h3>
+                    <p>Academic paper archive, PDF publication, bilingual portfolio context</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Output | 成果</h3>
+                    <p>One paper PDF and one cover image</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="TP-Debating%20Redistribution-LiWeisenburger.pdf" target="_blank" rel="noreferrer">Research Paper PDF</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

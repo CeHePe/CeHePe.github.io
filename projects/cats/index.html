@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>猫模型与程序化实验 | Cat Modeling and Procedural Experiments</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,84 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
+            <h1>猫模型与程序化实验</h1>
+            <h2 class="page-subtitle">Cat Modeling and Procedural Experiments</h2>
+            <p class="project-meta">🛠️ Houdini / Sculpting Files / Mesh Export / 3D Workflow</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个围绕猫形象展开的三维建模与程序化实验归档，保留了雕刻文件、Houdini 工程、网格导出和过程截图。</p>
+                <p>An archive of 3D modeling and procedural experiments built around a cat form, including sculpt files, Houdini scenes, mesh exports, and process captures.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>从目录内容来看，这个项目记录的是一个以猫为主体的三维造型练习。文件中同时包含 <code>.psx</code> 雕刻文件、<code>.hipnc</code> Houdini 工程、<code>.stl</code> 和 <code>.obj</code> 网格导出，说明它覆盖了从形体探索到格式转换的完整过程，而不只是单张渲染图。</p>
+                <p>Based on the folder contents, this project documents a cat-centered 3D form study. The presence of <code>.psx</code> sculpt files, <code>.hipnc</code> Houdini scenes, and exported <code>.stl</code> and <code>.obj</code> meshes suggests a workflow that moves from shape exploration to file conversion rather than ending at a single render.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p>多张过程截图和多个工程版本保留了试验轨迹：既有角色本体的造型变化，也有面数处理、导出和后续程序化处理的痕迹。对作品集而言，这类归档的重要性在于它呈现了一个模型如何从草稿状态过渡到可继续加工的资产。</p>
+                <p>The screenshots and multiple project files preserve a visible trail of iteration: form changes, mesh preparation, export steps, and later procedural handling. For a portfolio, that archive matters because it shows how the object evolved from draft geometry into a reusable asset.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="Cat project cover image">
+                    <figcaption>项目封面图 | Project cover image</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="Screenshot%202024-10-18%20131543.png" alt="Cat workflow screenshot">
+                    <figcaption>过程截图 | Process screenshot</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Modeling, sculpting, mesh cleanup, export preparation</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>Houdini, sculpting workflow, STL/OBJ export pipeline</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Outputs | 成果</h3>
+                    <p>Sculpt files, Houdini scenes, screenshots, STL and OBJ mesh assets</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="Cat.psx" target="_blank" rel="noreferrer">Cat Sculpt File</a></li>
+                <li><a href="kitty.psx" target="_blank" rel="noreferrer">Kitty Sculpt File</a></li>
+                <li><a href="cat_decimated.stl" target="_blank" rel="noreferrer">Decimated STL</a></li>
+                <li><a href="USAworld.hipnc" target="_blank" rel="noreferrer">Houdini Scene</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

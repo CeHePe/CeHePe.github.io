@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>信用研究论文 | Credit Research Paper</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,77 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Research | 2024</p>
+            <h1>信用研究论文</h1>
+            <h2 class="page-subtitle">Credit Research Paper</h2>
+            <p class="project-meta">🛠️ Research Writing / PDF Archive / Academic Paper</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个研究论文归档页，用于集中展示与“credit”主题相关的论文成果和封面图像。</p>
+                <p>An archive page that presents a research paper associated with the theme of credit, together with its cover image.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>该目录保留了一份论文 PDF 和对应封面图。由于原始写作内容以文档形式存放，这一页面的任务是为站内访问提供统一入口，并将研究成果纳入整个个人网站的展示结构中。</p>
+                <p>This folder preserves a paper PDF and its corresponding cover image. Because the original writing is stored as a document, the role of this page is to provide a unified web entry point and integrate the research output into the broader structure of the portfolio site.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p>与以视觉迭代为主的项目页不同，这类研究页更适合作为“论文存档 + 元信息入口”。后续如果需要补充摘要、课程背景或研究问题，可以在保持当前模板的前提下继续扩展，而不需要重做整体结构。</p>
+                <p>Unlike visually iterative project pages, a research page like this works best as a combination of paper archive and metadata entry point. If you later want to add an abstract, course context, or research question, the current template can absorb that material without needing a redesign.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="Credit paper cover">
+                    <figcaption>论文封面图 | Paper cover image</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Research writing, document preparation, paper archiving</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Format | 形式</h3>
+                    <p>Academic paper archive, PDF publication, research portfolio entry</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Output | 成果</h3>
+                    <p>One paper PDF and one cover image</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="paper.pdf" target="_blank" rel="noreferrer">Research Paper PDF</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

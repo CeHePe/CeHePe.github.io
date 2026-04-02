@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>UE5 游戏设计档案 | UE5 Game Design Archive</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,81 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
+            <h1>UE5 游戏设计档案</h1>
+            <h2 class="page-subtitle">UE5 Game Design Archive</h2>
+            <p class="project-meta">🛠️ Unreal Engine 5 / Game Design / Level Design Documentation</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个以 UE5 为背景的游戏设计归档页面，重点展示项目文档、关卡设计材料和阶段性汇报成果。</p>
+                <p>An Unreal Engine 5 game design archive focused on project documentation, level design materials, and milestone presentation outputs.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>这个目录的核心并不是单一截图，而是一组完整的游戏设计文档，包括 GDD、关卡设计文档、进度检查、最终汇报和结项材料。它更适合作为一个过程档案页，展示概念如何被拆分为玩法、关卡与最终表达。</p>
+                <p>The core of this folder is not a single screenshot but a full set of game design documents, including a GDD, level design document, progress check, final presentation, and final write-up. It works best as a process archive that shows how a concept was translated into mechanics, level thinking, and final presentation.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p>从文件结构来看，这个项目经历了较典型的游戏制作流程：先通过设计文档定义方向，再通过机制检查和关卡设计细化体验，最后以演示文稿和最终文档收束。即使这里没有直接展示 UE5 场景文件，文档链条本身已经能够说明项目组织方式。</p>
+                <p>The file structure suggests a conventional game production flow: define direction through design documentation, refine the experience through mechanics and level planning, and close the project with presentation materials and a final document. Even without directly exposing an Unreal scene file, the document chain itself shows how the project was structured.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="UE5 project cover image">
+                    <figcaption>项目封面图 | Project cover image</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Game design documentation, level design planning, milestone presentation</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>Unreal Engine 5 workflow, design docs, slides, production planning</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Outputs | 成果</h3>
+                    <p>GDD, level design PDF, final presentation, final report, progress notes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="GDD.docx" target="_blank" rel="noreferrer">Game Design Document</a></li>
+                <li><a href="Level%20Design%20Doc.pdf" target="_blank" rel="noreferrer">Level Design Document</a></li>
+                <li><a href="Mechanics%20Progress%20Check.docx" target="_blank" rel="noreferrer">Mechanics Progress Check</a></li>
+                <li><a href="Final%20Presentation.pptx" target="_blank" rel="noreferrer">Final Presentation</a></li>
+                <li><a href="Final%20Doc.docx" target="_blank" rel="noreferrer">Final Document</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>魔杖原型 | Magic Wand Prototype</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,89 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
+            <h1>魔杖原型</h1>
+            <h2 class="page-subtitle">Magic Wand Prototype</h2>
+            <p class="project-meta">🛠️ 3D Modeling / Physical Prototyping / Electronics / Fabrication</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个围绕魔杖道具展开的原型实验，涵盖造型、3D 打印、充电结构和电子实现的记录。</p>
+                <p>A prototype study built around a magic wand prop, covering form development, 3D printing, charging structure, and electronic implementation.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>从目录中的图像命名可以看出，这个项目并不只是概念渲染，而是一个更接近实物原型的制作过程。除了多张成品和过程照片外，还保留了 <code>Magic_Wand.fbx</code> 模型文件，说明该项目同时涉及数字建模与实体输出。</p>
+                <p>The filenames in this folder suggest that the project goes beyond concept renders and moves toward a physical prototype. In addition to multiple product and process photos, it also includes a <code>Magic_Wand.fbx</code> model file, indicating a workflow that connects digital modeling with physical output.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p><code>3dprinting</code>、<code>charging</code>、<code>code</code> 这些图像名称展示了一个清晰的原型路径：先建立可制造的几何与外观，再处理供电和交互逻辑，最后以照片记录组装和测试状态。这类记录能够有效说明作品既有视觉设计，也有工程层面的实现。</p>
+                <p>The filenames <code>3dprinting</code>, <code>charging</code>, and <code>code</code> reveal a clear prototyping path: build manufacturable geometry and form, address power and interaction logic, and then document assembly and testing through photography. This kind of archive is useful because it shows the project as both a visual object and an engineered artifact.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="Magic wand cover image">
+                    <figcaption>项目封面图 | Project cover image</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="3dprinting.jpg" alt="3D printing process">
+                    <figcaption>3D 打印过程 | 3D printing process</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="charging.jpg" alt="Charging prototype">
+                    <figcaption>充电结构测试 | Charging setup</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="code.jpg" alt="Code and electronics">
+                    <figcaption>代码与电子实现 | Code and electronics</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Object design, prototyping, fabrication workflow, hardware experimentation</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>3D modeling, FBX asset pipeline, 3D printing, electronics integration</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Outputs | 成果</h3>
+                    <p>Prototype photos, process documentation, printable geometry, FBX model</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="Magic_Wand.fbx" target="_blank" rel="noreferrer">FBX Model File</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

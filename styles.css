@@ -272,12 +272,18 @@ nav ul li a:hover {
     line-height: 1.1;
 }
 
-.summary {
-    max-width: 760px;
-    margin: 0;
+.page-subtitle {
+    margin: 0 0 12px;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 400;
     color: gainsboro;
-    font-size: 1.1rem;
-    line-height: 1.7;
+}
+
+.project-meta {
+    margin: 0 0 20px;
+    color: lightgrey;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
 }
 
 .section-title {
@@ -286,26 +292,23 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-.bilingual-block {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+.stacked-copy {
+    max-width: 760px;
 }
 
-.lang-block {
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.03);
+.intro-copy {
+    font-size: 1.1rem;
 }
 
-.lang-block h3,
-.meta-card h3 {
-    margin: 0 0 12px;
-    font-size: 1rem;
+.stacked-copy p {
+    margin: 0 0 16px;
+    line-height: 1.7;
 }
 
-.lang-block p,
+.stacked-copy p:last-child {
+    margin-bottom: 0;
+}
+
 .meta-card p,
 .media-card figcaption,
 .link-list a {
@@ -370,13 +373,11 @@ nav ul li a:hover {
         margin-bottom: 32px;
     }
 
-    .bilingual-block,
     .media-grid,
     .meta-grid {
         grid-template-columns: 1fr;
     }
 
-    .lang-block,
     .media-card,
     .meta-card {
         padding: 16px;

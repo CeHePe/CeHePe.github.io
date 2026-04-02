@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>教室场景研究 | Classroom Environment Study</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul id="nav-menu" class="nav-menu">
             <li><a href="/">首页 home</a></li>
             <li><a href="/projects">作品 projects</a></li>
@@ -20,33 +19,82 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="title">
-            <h1>title</h1>
-            <p>date</p>
-        </div>
-        <div class="content-section">
-            <p>text1</p>
-            <img src="图片1.png" alt="Image1">
-        </div>
-        <div class="content-section">
-            <p>text2</p>
-            <img src="图片2.png" alt="2view">
-        </div>
-        <div class="content-section">
-            <p>text3</p>
-            <img src="图片3.png" alt="3view">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
+            <h1>教室场景研究</h1>
+            <h2 class="page-subtitle">Classroom Environment Study</h2>
+            <p class="project-meta">🛠️ SketchUp / Scene Variations / Environment Design</p>
+            <div class="stacked-copy intro-copy">
+                <p>一个以教室为基础场景的空间设计实验，通过不同镜头和主题化变体测试同一环境的叙事气氛。</p>
+                <p>A spatial design experiment that uses a classroom as the base environment and tests how different views and themed variants can shift narrative atmosphere.</p>
+            </div>
+        </header>
 
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="stacked-copy">
+                <p>从目录中的 <code>.skp</code>、<code>.ssg</code> 文件和多张渲染图来看，这个项目围绕一个教室空间展开，不仅建立了基础模型，也尝试了不同主题和构图方式。它更像一个环境研究与场景演绎练习，而不是单纯的静态建模展示。</p>
+                <p>Based on the <code>.skp</code>, <code>.ssg</code>, and rendered images in the folder, this project centers on a classroom environment that is not only modeled once but also revisited through multiple themes and compositions. It reads as an environment study and scene interpretation exercise rather than a single static model.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="stacked-copy">
+                <p><code>classroom_clouds</code>、<code>classroom_disco</code>、<code>classroom_relic</code> 这些文件名说明该项目在同一空间基础上尝试了多种气氛变体。对设计过程而言，这种方法有助于比较灯光、材质和布景变化如何影响观者对场景的情绪判断。</p>
+                <p>The filenames <code>classroom_clouds</code>, <code>classroom_disco</code>, and <code>classroom_relic</code> suggest that the same environment was reworked through multiple atmospheric directions. As a process, this is useful because it compares how lighting, material shifts, and scenic interventions change the emotional reading of the room.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="0.jpg" alt="Classroom cover image">
+                    <figcaption>项目封面图 | Project cover image</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="1.png" alt="Classroom scene variation">
+                    <figcaption>场景变体示意 | Scene variation</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Environment modeling, scene styling, visual variation testing</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>SketchUp, scene presets, still-image export workflow</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Outputs | 成果</h3>
+                    <p>SketchUp source files, scene variants, rendered images</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="classroom.skp" target="_blank" rel="noreferrer">SketchUp Model</a></li>
+                <li><a href="classroom.ssg" target="_blank" rel="noreferrer">Scene Settings File</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>
