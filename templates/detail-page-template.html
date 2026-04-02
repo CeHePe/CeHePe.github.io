@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>项目标题 | Project Title</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul id="nav-menu" class="nav-menu">
+            <li><a href="/">首页 home</a></li>
+            <li><a href="/projects">作品 projects</a></li>
+            <li><a href="/research">研究 research</a></li>
+            <li><a href="/about">关于 about</a></li>
+        </ul>
+    </nav>
+
+    <main class="container detail-page">
+        <header class="page-header">
+            <p class="eyebrow">Project | 2024</p>
+            <h1>项目标题 | Project Title</h1>
+            <p class="summary">
+                用一句话说明项目的核心问题、方法或成果。
+                One sentence that explains the project's core question, method, or outcome.
+            </p>
+        </header>
+
+        <section class="content-section">
+            <h2 class="section-title">Overview | 项目简介</h2>
+            <div class="bilingual-block">
+                <div class="lang-block">
+                    <h3>中文</h3>
+                    <p>用 1 至 2 段介绍项目背景、目标和最终产出。</p>
+                </div>
+                <div class="lang-block">
+                    <h3>English</h3>
+                    <p>Use 1 to 2 paragraphs to introduce the project's background, goal, and final deliverable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Process | 过程</h2>
+            <div class="bilingual-block">
+                <div class="lang-block">
+                    <h3>中文</h3>
+                    <p>说明你做了什么、使用了哪些工具、解决了什么问题。</p>
+                </div>
+                <div class="lang-block">
+                    <h3>English</h3>
+                    <p>Describe what you made, which tools you used, and what problem you solved.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Media | 图像与成果</h2>
+            <div class="media-grid">
+                <figure class="media-card">
+                    <img src="/home/image_1.png" alt="Cover image">
+                    <figcaption>封面图或代表图 | Cover or hero image</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="/home/image_2.png" alt="Process image">
+                    <figcaption>过程图、细节图或结果图 | Process, detail, or output image</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Details | 项目信息</h2>
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h3>Role | 角色</h3>
+                    <p>Research / Design / Development</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Tools | 工具</h3>
+                    <p>ComfyUI, TouchDesigner, Unreal Engine, Blender</p>
+                </div>
+                <div class="meta-card">
+                    <h3>Format | 形式</h3>
+                    <p>Installation / Visualization / Research / Prototype</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Links | 附件链接</h2>
+            <ul class="link-list">
+                <li><a href="paper.pdf" target="_blank" rel="noreferrer">Project PDF</a></li>
+                <li><a href="final.mp4" target="_blank" rel="noreferrer">Project Video</a></li>
+                <li><a href="https://github.com/CeHePe" target="_blank" rel="noreferrer">Related Link</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
