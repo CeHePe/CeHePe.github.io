@@ -1,0 +1,48 @@
+name: Project date inbox actions
+
+on:
+  schedule:
+    # 09:30 Asia/Shanghai. GitHub Actions schedules use UTC.
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      reminder_date:
+        description: "Override action date in YYYY-MM-DD format for manual tests"
+        required: false
+        type: string
+      dry_run:
+        description: "Print planned actions without assigning or commenting"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  project-date-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Assign start-date issues and comment on due-date issues
+        env:
+          PROJECT_OWNER: CeHePe
+          PROJECT_NUMBER: "1"
+          PROJECT_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+          ISSUE_TOKEN: ${{ github.token }}
+          ISSUE_ASSIGNEE: CeHePe
+          DUE_DATE_MENTION: "@CeHePe"
+          REMINDER_DATE: ${{ inputs.reminder_date }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python scripts/project_date_inbox_actions.py
