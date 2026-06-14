@@ -176,6 +176,256 @@ nav ul li a:hover {
     filter: grayscale(0%); /* 悬停时恢复彩色 */
 }
 
+.home-page {
+    min-width: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.home-page nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0));
+    box-shadow: none;
+}
+
+.home-page nav .logo,
+.home-page nav ul li a {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.home-page nav .menu-toggle {
+    color: white;
+}
+
+.home-hero {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    height: auto;
+    padding: 88px clamp(24px, 6vw, 96px) 44px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+    text-align: left;
+}
+
+.home-hero-image,
+.home-hero-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero-image {
+    z-index: -2;
+    object-fit: cover;
+    animation: home-image-arrival 1.2s ease-out both;
+}
+
+.home-hero-shade {
+    z-index: -1;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.56) 47%, rgba(0, 0, 0, 0.08) 78%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.08) 62%);
+}
+
+.home-hero-content {
+    width: min(740px, 100%);
+    animation: home-content-arrival 0.8s 0.12s ease-out both;
+}
+
+.home-hero h1 {
+    margin: 0;
+    max-width: 720px;
+    color: white;
+    font-size: clamp(2.8rem, 6vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    text-wrap: balance;
+}
+
+.home-hero h1 span {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.48em;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.home-hero-positioning {
+    max-width: 650px;
+    margin-top: 22px;
+}
+
+.home-hero .home-hero-positioning p {
+    margin: 0;
+    font-size: clamp(0.95rem, 1.6vw, 1.22rem);
+    line-height: 1.55;
+}
+
+.home-hero .home-hero-positioning p + p {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: clamp(0.82rem, 1.35vw, 1rem);
+}
+
+.home-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.home-hero-actions a {
+    padding: 11px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.home-hero-actions a span {
+    color: rgba(255, 255, 255, 0.64);
+    transition: color 0.25s ease;
+}
+
+.home-hero-actions a:hover,
+.home-hero-actions a:focus-visible {
+    border-color: white;
+    background: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.home-hero-actions a:hover span,
+.home-hero-actions a:focus-visible span {
+    color: rgba(0, 0, 0, 0.62);
+}
+
+.home-social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.home-social-links a {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.home-social-links a:hover,
+.home-social-links a:focus-visible {
+    color: white;
+}
+
+.home-hero .home-hero-caption {
+    position: absolute;
+    right: clamp(16px, 3vw, 42px);
+    bottom: 18px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@keyframes home-image-arrival {
+    from {
+        opacity: 0;
+        transform: scale(1.025);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes home-content-arrival {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .home-page nav {
+        background: rgba(0, 0, 0, 0.86);
+    }
+
+    .home-page nav ul {
+        background-color: rgba(0, 0, 0, 0.94);
+    }
+
+    .home-hero {
+        min-height: 100svh;
+        padding: 88px 20px 48px;
+    }
+
+    .home-hero-shade {
+        background:
+            linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.38) 68%, rgba(0, 0, 0, 0.1) 100%),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.02));
+    }
+
+    .home-hero-content {
+        width: 100%;
+    }
+
+    .home-hero h1 {
+        max-width: 100%;
+        font-size: clamp(2.45rem, 13vw, 3.5rem);
+    }
+
+    .home-hero h1 span {
+        font-size: 0.42em;
+    }
+
+    .home-hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+    .home-hero-actions a {
+        padding: 10px 13px;
+    }
+
+    .home-social-links {
+        margin-top: 16px;
+    }
+
+    .home-hero .home-hero-caption {
+        right: 20px;
+        bottom: 14px;
+        font-size: 0.58rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-hero-image,
+    .home-hero-content {
+        animation: none;
+    }
+
+    .home-hero-actions a {
+        transition: none;
+    }
+}
+
 .portfolio {
     max-width: 1200px;
     margin: 0 auto;
