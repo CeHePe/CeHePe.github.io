@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>李欣元 | Nick (Xinyuan) Li</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css?v=20260614-home">
 </head>
-<body>
+<body class="home-page">
     <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
@@ -20,26 +20,31 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <!-- 大图展示 -->
-        <div class="image-container">
-            <img id="dynamic-image" src="home/image_1.png" alt="Hero Image" width="100%" height="auto">
-            <p class="caption">此图片由AI生成 This image is AI-generated 🛠️: ComfyUI</p>
+    <section class="hero home-hero">
+        <img id="dynamic-image" class="home-hero-image" src="home/image_1.png" alt="AI-generated fireworks above a city skyline">
+        <div class="home-hero-shade" aria-hidden="true"></div>
+
+        <div class="home-hero-content">
+            <h1>李欣元 <span>/ Nick (Xinyuan) Li</span></h1>
+            <div class="home-hero-positioning">
+                <p>创意研究者，探索人工智能、交互技术与数字创作。</p>
+                <p>Creative researcher exploring AI, interactive technology, and digital making.</p>
+            </div>
+
+            <div class="home-hero-actions" aria-label="Primary links">
+                <a href="/projects/">查看作品 <span>/ Projects</span></a>
+                <a href="/research/">阅读研究 <span>/ Research</span></a>
+                <a href="mailto:nickxl459@gmail.com">联系我 <span>/ Contact</span></a>
+            </div>
+
+            <div class="home-social-links" aria-label="Contact and social links">
+                <a href="https://linkedin.com/in/nickxl" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/CeHePe" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:nickxl459@gmail.com">Email</a>
+            </div>
         </div>
-        <!-- 标题 -->
-        <h1>李欣元 | Nick (Xinyuan) Li</h1>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/nickxl" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30">
-            </a>
-            <a href="https://github.com/CeHePe" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="30" height="30">
-            </a>
-            <a href="mailto:nickxl459@gmail.com">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="30" height="30">
-            </a>
-        </div>        
+
+        <p class="home-hero-caption">AI-generated image / ComfyUI</p>
     </section>
     
     <script>
@@ -85,16 +90,13 @@
             "home/image_38.png"
         ];
 
-        // 获取图片元素
         const heroImage = document.getElementById("dynamic-image");
 
-        // 定义函数以随机更换图片
         function changeImage() {
             const randomIndex = Math.floor(Math.random() * images.length);
             heroImage.src = images[randomIndex];
         }
 
-        // 每 4 秒调用一次 changeImage 函数
         setInterval(changeImage, 4000);
 
         const menuToggle = document.getElementById('menu-toggle');
