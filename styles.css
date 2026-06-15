@@ -241,20 +241,20 @@ nav ul li a:hover {
     margin: 0;
     max-width: 720px;
     color: white;
-    font-size: clamp(2.8rem, 6vw, 5.8rem);
-    line-height: 0.98;
-    letter-spacing: -0.055em;
+    font-size: clamp(0.95rem, 1.6vw, 1.22rem);
+    line-height: 1.55;
+    letter-spacing: 0;
     text-wrap: balance;
 }
 
 .home-hero h1 span {
     display: block;
-    margin-top: 8px;
+    margin-top: 0;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.48em;
+    font-size: 1em;
     font-weight: 400;
-    letter-spacing: -0.025em;
-    line-height: 1.15;
+    letter-spacing: 0;
+    line-height: 1.55;
 }
 
 .home-hero-positioning {
@@ -382,15 +382,6 @@ nav ul li a:hover {
 
     .home-hero-content {
         width: 100%;
-    }
-
-    .home-hero h1 {
-        max-width: 100%;
-        font-size: clamp(2.45rem, 13vw, 3.5rem);
-    }
-
-    .home-hero h1 span {
-        font-size: 0.42em;
     }
 
     .home-hero-actions {
