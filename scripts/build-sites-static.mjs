@@ -16,7 +16,8 @@ const staticEntries = [
   "templates",
 ];
 
-const worker = `const notFound = () => new Response("Not found", { status: 404 });
+const worker = `const fallbackOrigin = "https://cehepe.github.io";
+const notFound = () => new Response("Not found", { status: 404 });
 
 function hasExtension(pathname) {
   const name = pathname.split("/").pop() || "";
@@ -29,6 +30,31 @@ function assetRequest(request, pathname) {
   return new Request(url, request);
 }
 
+function fallbackRequest(request, pathname) {
+  const originalUrl = new URL(request.url);
+  const url = new URL(pathname, fallbackOrigin);
+  url.search = originalUrl.search;
+  const headers = new Headers(request.headers);
+  headers.delete("authorization");
+  headers.delete("cookie");
+  headers.delete("oai-sites-authorization");
+  return new Request(url, {
+    method: request.method,
+    headers,
+  });
+}
+
+async function fetchAsset(request, env, pathname) {
+  if (env?.ASSETS?.fetch) {
+    const response = await env.ASSETS.fetch(assetRequest(request, pathname));
+    if (response.status !== 404) {
+      return response;
+    }
+  }
+
+  return fetch(fallbackRequest(request, pathname));
+}
+
 export default {
   async fetch(request, env) {
     if (request.method !== "GET" && request.method !== "HEAD") {
@@ -36,10 +62,6 @@ export default {
         status: 405,
         headers: { Allow: "GET, HEAD" },
       });
-    }
-
-    if (!env?.ASSETS?.fetch) {
-      return notFound();
     }
 
     const url = new URL(request.url);
@@ -53,7 +75,7 @@ export default {
       ? url.pathname + "index.html"
       : url.pathname;
 
-    const response = await env.ASSETS.fetch(assetRequest(request, candidate));
+    const response = await fetchAsset(request, env, candidate);
     return response.status === 404 ? notFound() : response;
   },
 };
