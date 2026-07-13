@@ -8,6 +8,7 @@ const dist = path.join(root, "dist");
 const staticEntries = [
   "index.html",
   "styles.css",
+  ".openai",
   "about",
   "home",
   "projects",
