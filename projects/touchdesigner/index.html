@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="基于 TouchDesigner、故事板、投影形状和节点网络构建的宇宙投影叙事原型。">
+    <link rel="canonical" href="https://cehepe.github.io/projects/touchdesigner/">
+    <meta property="og:title" content="宇宙投影叙事原型 | Cosmic Projection Narrative Prototype">
+    <meta property="og:description" content="一个将太空主题素材组织为动态序列的 TouchDesigner 投影映射实验。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cehepe.github.io/projects/touchdesigner/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="宇宙投影叙事原型 | Cosmic Projection Narrative Prototype">
+    <meta name="twitter:description" content="一个将太空主题素材组织为动态序列的 TouchDesigner 投影映射实验。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>宇宙叙事与投影映射原型 | Cosmic Storytelling and Projection Mapping Prototype</title>
+    <title>宇宙投影叙事原型 | Cosmic Projection Narrative Prototype</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
     <main class="container detail-page">
         <header class="page-header">
             <p class="eyebrow">Project | 2024</p>
-            <h1>宇宙叙事与投影映射原型</h1>
-            <h2 class="page-subtitle">Cosmic Storytelling and Projection Mapping Prototype</h2>
+            <h1>宇宙投影叙事原型</h1>
+            <h2 class="page-subtitle">Cosmic Projection Narrative Prototype</h2>
             <p class="project-meta">🛠️ TouchDesigner / Projection Mapping / Visual Storytelling</p>
             <div class="stacked-copy intro-copy">
                 <p>一个基于 TouchDesigner 的太空主题视觉叙事实验，围绕故事板、投影形状和节点网络，把行星、彗星、超新星与航天器素材组织成一段可展示的动态序列。</p>
@@ -34,8 +49,8 @@
         <section class="content-section">
             <h2 class="section-title">Overview | 项目简介</h2>
             <div class="stacked-copy">
-                <p>这个项目使用 TouchDesigner 搭建一个宇宙主题的视觉叙事原型。根据目录中的故事板、投影模板、最终导出视频以及多份 <code>.toe</code> 工程文件，可以看出它不是单张图像练习，而是一个从概念组织、镜头顺序到输出演示都较完整的流程实验。</p>
-                <p>This project uses TouchDesigner to build a space-themed visual storytelling prototype. Based on the storyboard files, projection template, exported video, and multiple <code>.toe</code> files in the folder, the work reads as a process-driven study rather than a single image exercise.</p>
+                <p>这个项目使用 TouchDesigner 搭建一个宇宙主题的视觉叙事原型。项目过程以故事板、投影模板、多轮 TouchDesigner 工程迭代和最终导出视频，记录了从概念组织、镜头顺序到输出演示的完整流程。</p>
+                <p>This project uses TouchDesigner to build a space-themed visual storytelling prototype. Storyboards, a projection template, multiple TouchDesigner project iterations, and the final exported video document a complete process from concept organization and shot sequencing to presentation output.</p>
                 <p>页面中使用的素材覆盖行星、背景宇宙图像、彗星、超新星、航天器和节点网络截图，说明这个项目重点不只是视觉风格，也在测试如何将二维图像资源、合成逻辑和投影映射结合成一段连贯的空间叙事。</p>
                 <p>The asset set spans planets, space backgrounds, comets, supernovae, spacecraft imagery, and node screenshots, which suggests that the project is not only about style but also about assembling 2D assets, compositing logic, and projection mapping into a coherent spatial sequence.</p>
             </div>
@@ -44,10 +59,10 @@
         <section class="content-section">
             <h2 class="section-title">Process | 过程</h2>
             <div class="stacked-copy">
-                <p>从现有文件命名可以看到一个比较清晰的工作流：先用 <code>storyboard</code> 和 <code>projection_shape_storyboard_template</code> 确定叙事节奏与投影形状，再通过多份 TouchDesigner 工程文件反复试验画面组织、节点连接和视觉效果，最后输出为 <code>final.mp4</code> 进行展示。</p>
-                <p>The filenames point to a clear workflow: establish timing and projection shapes with the storyboard files, iterate on image sequencing and node structures through several TouchDesigner project files, and then export the result as <code>final.mp4</code> for presentation.</p>
-                <p><code>ExampleProtoStory</code>、<code>KantanTemplate</code>、<code>circuit</code>、<code>moon_black_hole</code> 这些文件名也保留了探索痕迹，说明项目经历了多轮版本迭代。对作品集页面而言，这类过程材料很有价值，因为它们能证明作品不是只停留在结果图，而是包含方法、结构和测试。</p>
-                <p>Names such as <code>ExampleProtoStory</code>, <code>KantanTemplate</code>, <code>circuit</code>, and <code>moon_black_hole</code> preserve evidence of iteration. For a portfolio page, that matters because it shows a process with methods and tests rather than a single final frame.</p>
+                <p>项目工作流先以故事板和投影形状模板确定叙事节奏与画面结构，再在 TouchDesigner 中反复试验图像编排、节点连接和视觉效果，最后输出为 <code>final.mp4</code> 进行展示。</p>
+                <p>The workflow first establishes narrative timing and image structure through storyboards and a projection-shape template, then iterates on image sequencing, node connections, and visual effects in TouchDesigner before exporting <code>final.mp4</code> for presentation.</p>
+                <p>多轮工程版本留下了清晰的探索轨迹。对作品集页面而言，这类过程证据说明作品不仅有最终画面，也包含方法、结构和测试。</p>
+                <p>Multiple project iterations leave a clear record of exploration. For a portfolio page, that process evidence shows not only a final image, but also the methods, structure, and testing behind it.</p>
             </div>
         </section>
 
@@ -55,19 +70,19 @@
             <h2 class="section-title">Media | 图像与成果</h2>
             <div class="media-grid">
                 <figure class="media-card">
-                    <img src="0.jpg" alt="Final scene still">
+                    <img src="0.jpg" alt="Final scene still" width="4032" height="3024" loading="lazy" decoding="async">
                     <figcaption>最终画面截图 | Final sequence still</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="storyboard.png" alt="Storyboard">
+                    <img src="storyboard.png" alt="Storyboard" width="2364" height="2732" loading="lazy" decoding="async">
                     <figcaption>故事板与镜头规划 | Storyboard and scene planning</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="node1.png" alt="TouchDesigner node graph 1">
+                    <img src="node1.png" alt="TouchDesigner node graph 1" width="2560" height="1400" loading="lazy" decoding="async">
                     <figcaption>节点结构截图 1 | Node graph capture 1</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="node2.png" alt="TouchDesigner node graph 2">
+                    <img src="node2.png" alt="TouchDesigner node graph 2" width="2560" height="1400" loading="lazy" decoding="async">
                     <figcaption>节点结构截图 2 | Node graph capture 2</figcaption>
                 </figure>
             </div>
@@ -104,21 +119,12 @@
         <section class="content-section">
             <h2 class="section-title">Links | 附件链接</h2>
             <ul class="link-list">
-                <li><a href="final.mp4" target="_blank" rel="noreferrer">Final Video</a></li>
-                <li><a href="storyboard.pdf" target="_blank" rel="noreferrer">Storyboard PDF</a></li>
-                <li><a href="projection_shape_storyboard_template.pdf" target="_blank" rel="noreferrer">Projection Template PDF</a></li>
-                <li><a href="ExampleProtoStory.toe" target="_blank" rel="noreferrer">TouchDesigner Prototype File</a></li>
+                <li><a href="final.mp4" target="_blank" rel="noopener noreferrer">Final Video</a></li>
+                <li><a href="storyboard.pdf" target="_blank" rel="noopener noreferrer">Storyboard PDF</a></li>
+                <li><a href="projection_shape_storyboard_template.pdf" target="_blank" rel="noopener noreferrer">Projection Template PDF</a></li>
             </ul>
         </section>
     </main>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-
-        menuToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    </script>
 </body>
 </html>

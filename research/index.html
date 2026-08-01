@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="李欣元的研究项目，涵盖美国预算辩论的政治文本分析与中小微企业信贷风险建模。">
+    <link rel="canonical" href="https://cehepe.github.io/research/">
+    <meta property="og:title" content="研究 | Research — 李欣元 | Nick (Xinyuan) Li">
+    <meta property="og:description" content="浏览李欣元在政治文本分析、风险量化与数据建模方向的研究。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cehepe.github.io/research/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="研究 | Research — 李欣元 | Nick (Xinyuan) Li">
+    <meta name="twitter:description" content="浏览李欣元在政治文本分析、风险量化与数据建模方向的研究。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>研究 | Research — 李欣元 | Nick (Xinyuan) Li</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
-    <div class="portfolio">
-        <div class="card coming-soon" aria-label="budget coming soon">
-            <img src="budget/0.jpg" alt="budget">
-            <div class="card-status">
-                <span>即将更新</span>
-                <span>Coming Soon</span>
+    <main class="listing-page">
+        <header class="listing-header">
+            <p class="eyebrow">Selected Research</p>
+            <h1>研究</h1>
+            <p class="listing-subtitle">Research</p>
+            <div class="listing-intro">
+                <p>以计算方法研究政治文本、经济行为与现实决策问题。</p>
+                <p>Computational approaches to political texts, economic behavior, and real-world decision problems.</p>
             </div>
-        </div>
-        <div class="card coming-soon" aria-label="credit coming soon">
-            <img src="credit/0.jpg" alt="credit">
-            <div class="card-status">
-                <span>即将更新</span>
-                <span>Coming Soon</span>
-            </div>
-        </div>
-    </div>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+        </header>
+
+        <section class="portfolio research-listing" aria-label="研究列表 / Research list">
+            <article class="card listing-card">
+                <a class="card-link" href="budget/">
+                <div class="listing-visual">
+                    <img src="budget/0.jpg" alt="美国预算议题的党派效应估计图 | Estimated partisan effects across U.S. budget topics" width="1127" height="925" loading="lazy" decoding="async">
+                </div>
+                <div class="listing-copy">
+                    <p class="listing-kicker">2023 · Political Text Analysis</p>
+                    <h2>经济危机时期的再分配辩论：基于结构主题模型的美国预算辩论研究</h2>
+                    <p class="listing-en-title" lang="en">Debating Redistribution in Times of Economic Crisis: Examining U.S. Budgetary Debates Using Structural Topic Modeling</p>
+                    <p class="listing-state">可查看 / View Research</p>
+                    <div class="listing-description">
+                        <p>研究以 2002—2011 年间 846 篇美国预算演说为材料，结合结构主题模型与双重差分考察危机、议题注意力与党派差异。结果显示，危机期间再分配议题被其他预算议题挤出；研究不直接检验政治回应性。</p>
+                        <p>Using 846 U.S. budget speeches from 2002–2011, the study combines structural topic modeling and difference-in-differences to examine crises, issue attention, and partisan effects. Redistribution topics were crowded out during crises; political responsiveness was not directly tested.</p>
+                    </div>
+                </div>
+                </a>
+            </article>
+
+            <article class="card listing-card">
+                <a class="card-link" href="credit/">
+                <div class="listing-visual">
+                    <img src="credit/0.jpg" alt="决策树分类报告与混淆矩阵 | Decision-tree classification report and confusion matrix" width="860" height="430" loading="lazy" decoding="async">
+                </div>
+                <div class="listing-copy">
+                    <p class="listing-kicker">2020 · Risk Modeling / CUMCM</p>
+                    <h2>基于风险量化、数学规划与决策树模型的中小微企业信贷策略制定</h2>
+                    <p class="listing-en-title" lang="en">Credit Strategy Formulation for Micro, Small and Medium-sized Enterprises Based on Risk Quantification, Mathematical Planning and Decision Tree Modeling</p>
+                    <p class="listing-state">可查看 / View Research</p>
+                    <div class="listing-description">
+                        <p>团队将企业数据处理、信用风险量化、决策树分类与信贷资源规划组织成一套分析流程。李欣元负责 Python 数据提取与清洗、matplotlib 和 Oracle 分析可视化，以及商业可行性评估。</p>
+                        <p>The team combined business-data processing, credit-risk quantification, decision-tree classification, and credit-resource planning. Li Xinyuan contributed Python data extraction and cleaning, analysis and visualization with matplotlib and Oracle, and business-feasibility evaluation.</p>
+                    </div>
+                </div>
+                </a>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

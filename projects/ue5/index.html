@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="在 CMAC 755S 课程中独立完成的 UE5 角色扮演与社会模拟原型，围绕少女偶像、城市系统与社会张力展开。">
+    <link rel="canonical" href="https://cehepe.github.io/projects/ue5/">
+    <meta property="og:title" content="Synthesizer | UE5 RPG / Social Simulation Prototype">
+    <meta property="og:description" content="一项独立完成的 UE5 角色扮演与社会模拟游戏原型。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cehepe.github.io/projects/ue5/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="Synthesizer | UE5 RPG / Social Simulation Prototype">
+    <meta name="twitter:description" content="一项独立完成的 UE5 角色扮演与社会模拟游戏原型。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>UE5 游戏设计档案 | UE5 Game Design Archive</title>
+    <title>Synthesizer | UE5 RPG / Social Simulation Prototype</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
     <main class="container detail-page">
         <header class="page-header">
             <p class="eyebrow">Project | 2024</p>
-            <h1>UE5 游戏设计档案</h1>
-            <h2 class="page-subtitle">UE5 Game Design Archive</h2>
-            <p class="project-meta">🛠️ Unreal Engine 5 / Game Design / Level Design Documentation</p>
+            <h1>Synthesizer</h1>
+            <h2 class="page-subtitle">UE5 RPG / Social Simulation Prototype</h2>
+            <p class="project-meta">🛠️ Unreal Engine 5 / MP City / Game Design / ConvAI / CMAC 755S</p>
             <div class="stacked-copy intro-copy">
-                <p>一个以 UE5 为背景的游戏设计归档页面，重点展示项目文档、关卡设计材料和阶段性汇报成果。</p>
-                <p>An Unreal Engine 5 game design archive focused on project documentation, level design materials, and milestone presentation outputs.</p>
+                <p>一项在 CMAC 755S 课程中独立完成的 UE5 角色扮演与社会模拟原型，围绕少女偶像角色、城市生活系统和政治与社会张力展开。</p>
+                <p>A solo UE5 role-playing and social-simulation prototype developed for CMAC 755S, centered on girl-idol characters, urban life systems, and political and social tensions.</p>
             </div>
         </header>
 
         <section class="content-section">
             <h2 class="section-title">Overview | 项目简介</h2>
             <div class="stacked-copy">
-                <p>这个目录的核心并不是单一截图，而是一组完整的游戏设计文档，包括 GDD、关卡设计文档、进度检查、最终汇报和结项材料。它更适合作为一个过程档案页，展示概念如何被拆分为玩法、关卡与最终表达。</p>
-                <p>The core of this folder is not a single screenshot but a full set of game design documents, including a GDD, level design document, progress check, final presentation, and final write-up. It works best as a process archive that shows how a concept was translated into mechanics, level thinking, and final presentation.</p>
+                <p><em>Synthesizer</em> 使用 UE5 的 MP City 环境构建可探索的城市原型。玩家在少女偶像角色与城市居民之间移动，通过对话、资源管理和环境互动接触角色关系以及更广泛的政治与社会议题。</p>
+                <p><em>Synthesizer</em> uses UE5's MP City environment to build an explorable urban prototype. The player moves among girl-idol characters and city residents, encountering character relationships and broader political and social questions through dialogue, resource management, and environmental interaction.</p>
             </div>
         </section>
 
         <section class="content-section">
             <h2 class="section-title">Process | 过程</h2>
             <div class="stacked-copy">
-                <p>从文件结构来看，这个项目经历了较典型的游戏制作流程：先通过设计文档定义方向，再通过机制检查和关卡设计细化体验，最后以演示文稿和最终文档收束。即使这里没有直接展示 UE5 场景文件，文档链条本身已经能够说明项目组织方式。</p>
-                <p>The file structure suggests a conventional game production flow: define direction through design documentation, refine the experience through mechanics and level planning, and close the project with presentation materials and a final document. Even without directly exposing an Unreal scene file, the document chain itself shows how the project was structured.</p>
+                <p>项目通过 GDD 和关卡设计文档定义世界、角色与玩法，再以饥饿值、货币系统和自动售货机教程建立早期玩家循环，并接入 ConvAI NPC 测试更开放的角色对话。阶段汇报和最终文档记录了原型在机制、关卡与叙事表达之间的迭代。</p>
+                <p>The project defines its world, characters, and mechanics through a GDD and level-design documentation. Hunger, currency, and a vending-machine tutorial establish the early player loop, while ConvAI NPCs test more open-ended character dialogue. Milestone presentations and final documentation record iteration across mechanics, level design, and narrative expression.</p>
             </div>
         </section>
 
@@ -51,8 +66,16 @@
             <h2 class="section-title">Media | 图像与成果</h2>
             <div class="media-grid">
                 <figure class="media-card">
-                    <img src="0.jpg" alt="UE5 project cover image">
-                    <figcaption>项目封面图 | Project cover image</figcaption>
+                    <img src="0.jpg" alt="狭窄巷道、霓虹灯与自动售货机的环境原型 | Alley, neon-light, and vending-machine environment prototype" width="648" height="511" loading="lazy" decoding="async">
+                    <figcaption>狭窄巷道、霓虹灯与自动售货机的环境原型 | Alley, neon-light, and vending-machine environment prototype</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="mechanics.png" alt="Synthesizer 中的角色、空间与交互碰撞体调试画面 | Character, environment, and interaction-collider debugging view in Synthesizer" width="648" height="511" loading="lazy" decoding="async">
+                    <figcaption>角色、空间与交互碰撞体调试画面 | Character, environment, and interaction-collider debugging view</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="npc-vending.png" alt="Synthesizer 中的自动售货机、NPC 与交互碰撞体调试画面 | Vending-machine, NPC, and interaction-collider debugging view in Synthesizer" width="648" height="511" loading="lazy" decoding="async">
+                    <figcaption>自动售货机、NPC与交互碰撞体调试画面 | Vending-machine, NPC, and interaction-collider debugging view</figcaption>
                 </figure>
             </div>
         </section>
@@ -62,15 +85,18 @@
             <div class="meta-grid">
                 <div class="meta-card">
                     <h3>Role | 角色</h3>
-                    <p>Game design documentation, level design planning, milestone presentation</p>
+                    <p>纯个人项目：概念、游戏设计、关卡规划、原型实现与文档</p>
+                    <p>Solo project: concept, game design, level planning, prototype implementation, and documentation</p>
                 </div>
                 <div class="meta-card">
-                    <h3>Tools | 工具</h3>
-                    <p>Unreal Engine 5 workflow, design docs, slides, production planning</p>
+                    <h3>Systems | 系统</h3>
+                    <p>饥饿、货币、自动售货机教程与 ConvAI NPC 对话</p>
+                    <p>Hunger, currency, a vending-machine tutorial, and ConvAI NPC dialogue</p>
                 </div>
                 <div class="meta-card">
-                    <h3>Outputs | 成果</h3>
-                    <p>GDD, level design PDF, final presentation, final report, progress notes</p>
+                    <h3>Status | 状态</h3>
+                    <p>课程原型，用于验证设计方向，并非成熟商业游戏</p>
+                    <p>A course prototype for testing the design direction, not a finished commercial game</p>
                 </div>
             </div>
         </section>
@@ -78,22 +104,14 @@
         <section class="content-section">
             <h2 class="section-title">Links | 附件链接</h2>
             <ul class="link-list">
-                <li><a href="GDD.docx" target="_blank" rel="noreferrer">Game Design Document</a></li>
-                <li><a href="Level%20Design%20Doc.pdf" target="_blank" rel="noreferrer">Level Design Document</a></li>
-                <li><a href="Mechanics%20Progress%20Check.docx" target="_blank" rel="noreferrer">Mechanics Progress Check</a></li>
-                <li><a href="Final%20Presentation.pptx" target="_blank" rel="noreferrer">Final Presentation</a></li>
-                <li><a href="Final%20Doc.docx" target="_blank" rel="noreferrer">Final Document</a></li>
+                <li><a href="GDD.docx" target="_blank" rel="noopener noreferrer">游戏设计文档 | Game Design Document</a></li>
+                <li><a href="Level%20Design%20Doc.pdf" target="_blank" rel="noopener noreferrer">关卡设计文档 | Level Design Document</a></li>
+                <li><a href="Mechanics%20Progress%20Check.docx" target="_blank" rel="noopener noreferrer">机制进度检查 | Mechanics Progress Check</a></li>
+                <li><a href="Final%20Presentation.pptx" target="_blank" rel="noopener noreferrer">最终汇报 | Final Presentation</a></li>
+                <li><a href="Final%20Doc.docx" target="_blank" rel="noopener noreferrer">最终文档 | Final Document</a></li>
             </ul>
         </section>
     </main>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-
-        menuToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    </script>
 </body>
 </html>

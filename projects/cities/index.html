@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="通过 ArcGIS、R 与 StoryMaps 重新检视美国大都市阶层结构及空间分布的城市研究项目。">
+    <link rel="canonical" href="https://cehepe.github.io/projects/cities/">
+    <meta property="og:title" content="美国大城市的工人阶级 | The Working Classes of Great American Cities">
+    <meta property="og:description" content="一个关注城市空间分布与社会分层理论张力的地图可视化项目。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cehepe.github.io/projects/cities/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="美国大城市的工人阶级 | The Working Classes of Great American Cities">
+    <meta name="twitter:description" content="一个关注城市空间分布与社会分层理论张力的地图可视化项目。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>美国大城市的工人阶级 | The Working Classes of Great American Cities</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
@@ -53,8 +68,8 @@
             <h2 class="section-title">Media | 图像与成果</h2>
             <div class="media-grid">
                 <figure class="media-card">
-                    <a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noreferrer">
-                        <img src="0.jpg" alt="Cities project cover image">
+                    <a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noopener noreferrer">
+                        <img src="0.jpg" alt="美国大城市工人阶级项目的 StoryMaps 封面 | StoryMaps cover for The Working Classes of Great American Cities" width="1262" height="818" loading="lazy" decoding="async">
                     </a>
                     <figcaption>StoryMaps 项目封面 | StoryMaps project cover</figcaption>
                 </figure>
@@ -66,14 +81,17 @@
             <div class="meta-grid">
                 <div class="meta-card">
                     <h3>Role | 角色</h3>
+                    <p>研究框架、数据解读、地图叙事与双语写作</p>
                     <p>Research framing, data interpretation, map storytelling, bilingual writing</p>
                 </div>
                 <div class="meta-card">
                     <h3>Tools | 工具</h3>
+                    <p>ArcGIS、R、2022 年 ACS 数据与 ArcGIS StoryMaps</p>
                     <p>ArcGIS, R, ACS 2022 data, ArcGIS StoryMaps</p>
                 </div>
                 <div class="meta-card">
                     <h3>Format | 形式</h3>
+                    <p>城市研究可视化、地图叙事与网页呈现</p>
                     <p>Urban research visualization, map narrative, web presentation</p>
                 </div>
             </div>
@@ -82,18 +100,10 @@
         <section class="content-section">
             <h2 class="section-title">Links | 附件链接</h2>
             <ul class="link-list">
-                <li><a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noreferrer">ArcGIS StoryMaps Project</a></li>
+                <li><a href="https://storymaps.arcgis.com/stories/8877f1862a2f4cc091027368248d9f19" target="_blank" rel="noopener noreferrer">ArcGIS StoryMaps 项目 | ArcGIS StoryMaps Project</a></li>
             </ul>
         </section>
     </main>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-
-        menuToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    </script>
 </body>
 </html>

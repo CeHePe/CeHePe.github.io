@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="以单片机学习为重点，使用 CircuitPython、传感器、LED、音频与 USB 连接完成的交互魔杖原型。">
+    <link rel="canonical" href="https://cehepe.github.io/projects/wand/">
+    <meta property="og:title" content="单片机魔杖原型 | Microcontroller Magic Wand Prototype">
+    <meta property="og:description" content="一个将动作转化为灯光和声音反馈的单片机交互原型。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cehepe.github.io/projects/wand/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="单片机魔杖原型 | Microcontroller Magic Wand Prototype">
+    <meta name="twitter:description" content="一个将动作转化为灯光和声音反馈的单片机交互原型。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>魔杖原型 | Magic Wand Prototype</title>
+    <title>单片机魔杖原型 | Microcontroller Magic Wand Prototype</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
     <main class="container detail-page">
         <header class="page-header">
             <p class="eyebrow">Project | 2024</p>
-            <h1>魔杖原型</h1>
-            <h2 class="page-subtitle">Magic Wand Prototype</h2>
-            <p class="project-meta">🛠️ 3D Modeling / Physical Prototyping / Electronics / Fabrication</p>
+            <h1>单片机魔杖原型</h1>
+            <h2 class="page-subtitle">Microcontroller Magic Wand Prototype</h2>
+            <p class="project-meta">🛠️ Adafruit Circuit Playground / CircuitPython / Sensors / LEDs &amp; Audio</p>
             <div class="stacked-copy intro-copy">
-                <p>一个围绕魔杖道具展开的原型实验，涵盖造型、3D 打印、充电结构和电子实现的记录。</p>
-                <p>A prototype study built around a magic wand prop, covering form development, 3D printing, charging structure, and electronic implementation.</p>
+                <p>一个以单片机学习为重点的交互魔杖原型，通过传感器输入、LED 和音频输出把挥动动作转化为可感知反馈。</p>
+                <p>An interactive magic-wand prototype focused on microcontroller learning, translating movement into perceivable feedback through sensor input, LEDs, and audio output.</p>
             </div>
         </header>
 
         <section class="content-section">
             <h2 class="section-title">Overview | 项目简介</h2>
             <div class="stacked-copy">
-                <p>从目录中的图像命名可以看出，这个项目并不只是概念渲染，而是一个更接近实物原型的制作过程。除了多张成品和过程照片外，还保留了 <code>Magic_Wand.fbx</code> 模型文件，说明该项目同时涉及数字建模与实体输出。</p>
-                <p>The filenames in this folder suggest that the project goes beyond concept renders and moves toward a physical prototype. In addition to multiple product and process photos, it also includes a <code>Magic_Wand.fbx</code> model file, indicating a workflow that connects digital modeling with physical output.</p>
+                <p>项目围绕 Adafruit Circuit Playground 展开，使用 CircuitPython 读取板载传感器与加速度数据，并控制灯光和声音反馈。重点是理解单片机从输入采集、程序判断到输出响应的完整链路，而不是魔杖外形本身。</p>
+                <p>The project centers on the Adafruit Circuit Playground. CircuitPython reads onboard sensors and acceleration data, then controls light and sound feedback. The emphasis is the complete microcontroller chain from input capture and program logic to output response, rather than the wand's exterior form.</p>
             </div>
         </section>
 
         <section class="content-section">
             <h2 class="section-title">Process | 过程</h2>
             <div class="stacked-copy">
-                <p><code>3dprinting</code>、<code>charging</code>、<code>code</code> 这些图像名称展示了一个清晰的原型路径：先建立可制造的几何与外观，再处理供电和交互逻辑，最后以照片记录组装和测试状态。这类记录能够有效说明作品既有视觉设计，也有工程层面的实现。</p>
-                <p>The filenames <code>3dprinting</code>, <code>charging</code>, and <code>code</code> reveal a clear prototyping path: build manufacturable geometry and form, address power and interaction logic, and then document assembly and testing through photography. This kind of archive is useful because it shows the project as both a visual object and an engineered artifact.</p>
+                <p>开发过程先验证单片机、传感器、LED 和音频的基础行为，再把加速度变化映射为交互触发条件，并在实体外壳中完成连接与测试。USB 连接同时承担供电和程序连接两项功能，便于在设备测试时持续修改 CircuitPython 代码。</p>
+                <p>Development begins by validating the microcontroller, sensors, LEDs, and audio independently, then maps acceleration changes to interaction triggers before connection and testing in the physical shell. USB serves both as the power supply and the programming connection, allowing the CircuitPython code to be revised during device testing.</p>
+            </div>
+            <div class="stacked-copy">
+                <p>此前关联的 FBX 模型来自公共素材包，文件元数据显示为 2021 年，并非本项目的原创模型；具体素材包名称与许可信息仍待确认。</p>
+                <p>The FBX model previously associated with this page comes from a public asset pack, carries 2021 metadata, and is not an original model made for this project; the exact pack name and license still need confirmation.</p>
             </div>
         </section>
 
@@ -51,20 +70,20 @@
             <h2 class="section-title">Media | 图像与成果</h2>
             <div class="media-grid">
                 <figure class="media-card">
-                    <img src="0.jpg" alt="Magic wand cover image">
-                    <figcaption>项目封面图 | Project cover image</figcaption>
+                    <img src="code.jpg" alt="CircuitPython code for the microcontroller prototype" width="658" height="720" loading="lazy" decoding="async">
+                    <figcaption>CircuitPython 程序与单片机测试 | CircuitPython code and microcontroller test</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="3dprinting.jpg" alt="3D printing process">
-                    <figcaption>3D 打印过程 | 3D printing process</figcaption>
+                    <img src="charging.jpg" alt="USB power and programming connection" width="4032" height="3024" loading="lazy" decoding="async">
+                    <figcaption>同时用于供电和编程的 USB 连接 | USB connection for power and programming</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="charging.jpg" alt="Charging prototype">
-                    <figcaption>充电结构测试 | Charging setup</figcaption>
+                    <img src="3dprinting.jpg" alt="Physical shell preparation for the wand prototype" width="1280" height="686" loading="lazy" decoding="async">
+                    <figcaption>交互硬件的实体外壳准备 | Physical shell preparation for the interactive hardware</figcaption>
                 </figure>
                 <figure class="media-card">
-                    <img src="code.jpg" alt="Code and electronics">
-                    <figcaption>代码与电子实现 | Code and electronics</figcaption>
+                    <img src="0.jpg" alt="Microcontroller magic wand prototype" width="4032" height="3024" loading="lazy" decoding="async">
+                    <figcaption>单片机魔杖原型 | Microcontroller magic wand prototype</figcaption>
                 </figure>
             </div>
         </section>
@@ -74,15 +93,18 @@
             <div class="meta-grid">
                 <div class="meta-card">
                     <h3>Role | 角色</h3>
-                    <p>Object design, prototyping, fabrication workflow, hardware experimentation</p>
+                    <p>单片机程序开发、传感器逻辑、灯光与音频反馈、原型集成</p>
+                    <p>Microcontroller programming, sensor logic, light and audio feedback, and prototype integration</p>
                 </div>
                 <div class="meta-card">
                     <h3>Tools | 工具</h3>
-                    <p>3D modeling, FBX asset pipeline, 3D printing, electronics integration</p>
+                    <p>Adafruit Circuit Playground、CircuitPython、加速度传感、USB</p>
+                    <p>Adafruit Circuit Playground, CircuitPython, accelerometer sensing, and USB</p>
                 </div>
                 <div class="meta-card">
                     <h3>Outputs | 成果</h3>
-                    <p>Prototype photos, process documentation, printable geometry, FBX model</p>
+                    <p>可交互实体原型、CircuitPython 程序和硬件测试记录</p>
+                    <p>An interactive physical prototype, CircuitPython program, and hardware test documentation</p>
                 </div>
             </div>
         </section>
@@ -90,18 +112,10 @@
         <section class="content-section">
             <h2 class="section-title">Links | 附件链接</h2>
             <ul class="link-list">
-                <li><a href="Magic_Wand.fbx" target="_blank" rel="noreferrer">FBX Model File</a></li>
+                <li>公共素材包模型暂不公开，待确认准确来源与许可。 | The public-pack model is not published while its exact source and license are being confirmed.</li>
             </ul>
         </section>
     </main>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-
-        menuToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    </script>
 </body>
 </html>
