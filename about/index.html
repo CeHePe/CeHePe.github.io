@@ -1,74 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="了解创意研究者李欣元（Nick Xinyuan Li）连接计算媒体、社会研究与数据分析的实践及教育背景。">
+    <link rel="canonical" href="https://cehepe.github.io/about/">
+    <meta property="og:title" content="关于李欣元 | About Nick (Xinyuan) Li">
+    <meta property="og:description" content="创意研究者，连接计算媒体、社会研究与数据分析。">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://cehepe.github.io/about/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="关于李欣元 | About Nick (Xinyuan) Li">
+    <meta name="twitter:description" content="创意研究者，连接计算媒体、社会研究与数据分析。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>李欣元 | Nick (Xinyuan) Li</title>
+    <title>关于李欣元 | About Nick (Xinyuan) Li</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 20px;">
-            <div>
-                <strong>杜克大学，研究生院，美国</strong><br>
-                <strong>Duke University, Graduate School, Durham, NC, US</strong>
+    <main class="about-page">
+        <header class="about-header">
+            <p class="eyebrow">About</p>
+            <h1>关于李欣元</h1>
+            <p class="about-subtitle">About Nick (Xinyuan) Li</p>
+            <div class="about-intro">
+                <p>我是一名连接计算媒体、社会研究与数据分析的创意研究者，关注技术如何成为理解社会、组织信息与构建体验的方法。</p>
+                <p>I am a creative researcher connecting computational media, social research, and data analysis, with an interest in how technology can help interpret society, organize information, and shape experiences.</p>
             </div>
-            <span>2025</span>
-        </div>
-        <div>
-            <em>通识研究硕士 | 信息科学与研究辅修</em><br>
-            <em>Master of Arts in Liberal Studies | Graduate Certificate in Information Science + Studies</em>
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 20px;">
-            <div>
-                <strong>牛津大学，埃克塞特学院，英国</strong><br>
-                <strong>University of Oxford, Exeter College, Oxford, UK</strong>
-            </div>
-            <span>2024</span>
-        </div>
-        <div>
-            <em>访学 | 历史、政治与社会学</em><br>
-            <em>Study Away | History, Politics & Society</em>
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 20px;">
-            <div>
-                <strong>上海大学，社会学院，上海</strong><br>
-                <strong>Shanghai University, Shanghai, China</strong>
-            </div>
-            <span>2023</span>
-        </div>
-        <div>
-            <em>社会学学士</em><br>
-            <em>Bachelor of Arts in Sociology</em>
-        </div>
-        <div class="content-section">
-            <img src="photo.jpg" alt="photo">
-        </div>
-    </div>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
+        </header>
 
+        <div class="about-layout">
+            <div class="about-content">
+                <section class="about-section" aria-labelledby="education-title">
+                    <h2 id="education-title">教育经历 / Education</h2>
+                    <div class="education-list">
+                        <article class="education-item">
+                            <div class="education-heading">
+                                <h3>杜克大学，研究生院<br>Duke University, Graduate School</h3>
+                                <time datetime="2025">2025</time>
+                            </div>
+                            <p>通识研究硕士；信息科学与研究研究生证书<br>Master of Arts in Liberal Studies; Graduate Certificate in Information Science + Studies</p>
+                        </article>
+                        <article class="education-item">
+                            <div class="education-heading">
+                                <h3>牛津大学，埃克塞特学院<br>University of Oxford, Exeter College</h3>
+                                <time datetime="2024">2024</time>
+                            </div>
+                            <p>访学：历史、政治与社会<br>Study Away: History, Politics &amp; Society</p>
+                        </article>
+                        <article class="education-item">
+                            <div class="education-heading">
+                                <h3>上海大学，社会学院<br>Shanghai University</h3>
+                                <time datetime="2023">2023</time>
+                            </div>
+                            <p>社会学学士<br>Bachelor of Arts in Sociology</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="about-section" aria-labelledby="contact-title">
+                    <h2 id="contact-title">联系 / Connect</h2>
+                    <ul class="about-links">
+                        <li><a href="https://linkedin.com/in/nickxl" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/CeHePe" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="mailto:nickxl459@gmail.com">Email</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <figure class="about-portrait">
+                <img src="photo.jpg" alt="李欣元的个人照片 | Portrait of Nick (Xinyuan) Li" width="2275" height="1280" loading="lazy" decoding="async">
+            </figure>
+        </div>
+    </main>
 </body>
 </html>

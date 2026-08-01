@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="李欣元（Nick Xinyuan Li）的个人网站，展示人工智能、交互技术、数字创作、作品与研究。">
+    <link rel="canonical" href="https://cehepe.github.io/">
+    <meta property="og:title" content="李欣元 | Nick (Xinyuan) Li">
+    <meta property="og:description" content="创意研究者，探索人工智能、交互技术与数字创作。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cehepe.github.io/">
+    <meta property="og:image" content="https://cehepe.github.io/social-preview.png">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta property="og:image:alt" content="李欣元作品集的抽象数据地形与节点视觉 | Abstract data terrain and node visualization for Nick Li's portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cehepe.github.io/social-preview.png">
+    <meta name="twitter:title" content="李欣元 | Nick (Xinyuan) Li">
+    <meta name="twitter:description" content="创意研究者，探索人工智能、交互技术与数字创作。">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>李欣元 | Nick (Xinyuan) Li</title>
-    <link rel="stylesheet" href="/styles.css?v=20260615-home-hotfix">
+    <link rel="stylesheet" href="/styles.css?v=20260801-site-foundation">
+    <script src="/site.js" defer></script>
 </head>
 <body class="home-page">
     <!-- Navigation -->
     <nav>
         <div class="logo">李欣元 | Nick (Xinyuan) Li</div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- 汉堡菜单按钮 -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单 / Open navigation menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
-            <li><a href="/">首页 home</a></li>
-            <li><a href="/projects">作品 projects</a></li>
-            <li><a href="/research">研究 research</a></li>
-            <li><a href="/about">关于 about</a></li>
+            <li><a href="/">首页 / Home</a></li>
+            <li><a href="/projects/">作品 / Projects</a></li>
+            <li><a href="/research/">研究 / Research</a></li>
+            <li><a href="/about/">关于 / About</a></li>
         </ul>
     </nav>
 
     <section class="hero home-hero">
-        <img id="dynamic-image" class="home-hero-image" src="home/image_1.png" alt="AI-generated fireworks above a city skyline">
+        <img id="dynamic-image" class="home-hero-image" src="/home/image_1.png" alt="ComfyUI 生成的城市烟花图像 | AI-generated fireworks above a city skyline" width="1024" height="1024" fetchpriority="high">
         <div class="home-hero-shade" aria-hidden="true"></div>
 
         <div class="home-hero-content">
@@ -47,65 +62,5 @@
         <p class="home-hero-caption">AI-generated image / ComfyUI</p>
     </section>
     
-    <script>
-        // 定义图片数组
-        const images = [
-            "home/image_1.png",
-            "home/image_2.png",
-            "home/image_3.png",
-            "home/image_4.png",
-            "home/image_5.png",
-            "home/image_6.png",
-            "home/image_7.png",
-            "home/image_8.png",
-            "home/image_9.png",
-            "home/image_10.png",
-            "home/image_11.png",
-            "home/image_12.png",
-            "home/image_13.png",
-            "home/image_14.png",
-            "home/image_15.png",
-            "home/image_16.png",
-            "home/image_17.png",
-            "home/image_18.png",
-            "home/image_19.png",
-            "home/image_20.png",
-            "home/image_21.png",
-            "home/image_22.png",
-            "home/image_23.png",
-            "home/image_24.png",
-            "home/image_25.png",
-            "home/image_26.png",
-            "home/image_27.png",
-            "home/image_28.png",
-            "home/image_29.png",
-            "home/image_30.png",
-            "home/image_31.png",
-            "home/image_32.png",
-            "home/image_33.png",
-            "home/image_34.png",
-            "home/image_35.png",
-            "home/image_36.png",
-            "home/image_37.png",
-            "home/image_38.png"
-        ];
-
-        const heroImage = document.getElementById("dynamic-image");
-
-        function changeImage() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            heroImage.src = images[randomIndex];
-        }
-
-        setInterval(changeImage, 4000);
-
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-    
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>   
-
 </body>
 </html>
